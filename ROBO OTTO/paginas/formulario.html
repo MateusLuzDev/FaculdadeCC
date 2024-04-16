@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>OTTO - Formulário</title>
+</head>
+
+<body>
+  <main>
+
+    <h1>Formulário</h1>
+
+    <form name="formulario" id="formulario_cadastro" action="salvar.jsp" method="post">
+      <br>
+      <label>Endereço</label>
+      <input type="text" name="endereco" value="Digite o endereço" size="40" maxlength="150">
+      <br>
+      <label>Data de Nacimento</label>
+      <input type="date" name="data_nascimento">
+      <br>
+      <label>Senha</label>
+      <input type="password" name="senha">
+      <br>
+      <label>Data/Hora de Entrada</label>
+      <input type="datetime-local" name="datahora_entrada">
+      <br>
+      <!-- Alternativa tipo radio "marcação" -->
+
+      <input type="radio" id="alternativa1" name="alternativa" value="A"> <label for="alternativa1">Alternativa A</label>
+
+      <input type="radio" id="alternativa2" name="alternativa" value="B"> <label for="alternativa2">Alternativa B</label>
+
+      <input type="radio" id="alternativa3" name="alternativa" value="C"> <label for="alternativa3">Alternativa C</label>
+
+      <input type="radio" id="alternativa4" name="alternativa" value="D"> <label for="alternativa4">Alternativa D</label>
+      <br>
+      <!-- Alternativa tipo checkbox -->
+
+      <input type="checkbox" id="alternativa1" name="alternativa" value="A"> <label for="alternativa1">Alternativa A</label>
+
+      <input type="checkbox" id="alternativa2" name="alternativa" value="B"> <label for="alternativa2">Alternativa B</label>
+
+      <input type="checkbox" id="alternativa3" name="alternativa" value="C"> <label for="alternativa3">Alternativa C</label>
+
+      <input type="checkbox" id="alternativa4" name="alternativa" value="D"> <label for="alternativa4">Alternativa D</label>
+
+      <br>
+      <!-- ... -->
+
+      <label>Telefone</label>
+      <input type="tel" name="telefone" size="20" maxlength="20">
+      <br>
+      <label>E-mail</label>
+      <input type="email" name="email" size="50" maxlength="80">
+      <br>
+      <label>Pesquise</label>
+      <input type="search" name="busca" size="50" maxlength="100">
+      <br>
+      <label>Site</label>
+      <input type="url" name="site" size="50" maxlength="100">
+      <br>
+      <label>Estado</label>
+      <select name="estado" id="estado">
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AM">Amazonas</option>
+        <option value="AP">Amapá</option>
+      </select>
+      <br>
+      <label>Mensagem</label>
+      <textarea name="" id="" cols="" rows=""></textarea>
+      <br>
+      <input type="submit" name="enviar" id="Salvar">
+      <br>
+      <input type="button" name="chamar" value="Chamar" onclick="alert('Uhuwww')">
+      <br>
+
+      <a href="./formulario2.html"> Formulario 2 teste</a>
+    </form>
+
+  </main>
+</body>
+
+</html>
